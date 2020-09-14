@@ -44,7 +44,7 @@ const Import: React.FC = () => {
   function submitFile(files: File[]): void {
     const uploadFiles = files.map(file => ({
       file,
-      name: File.name,
+      name: file.name,
       readableSize: fileSize(file.size),
     }));
 
